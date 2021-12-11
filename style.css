@@ -1,0 +1,261 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Indie+Flower&family=Italianno&family=Lato&family=Vesper+Libre:wght@500&display=swap");
+body {
+    font-family: "Baloo Tamma 2", cursive;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: black;
+    cursor: wait;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #777;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    padding: 15px 15px;
+    transition: all 0.5s;
+}
+.header {
+    background-image: linear-gradient(to right bottom, #20002c88, #cbb4d48f), url(./img2/bg-listing-landing-right.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.header-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.header_content {
+    width: 30%;
+    color: white;
+    padding: 40px 0;
+}
+.header-img-div {
+    width: 30%;
+    height: 55%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.header-front-img {
+    width: 100%;
+    height: 100%;
+}
+.header-main-heading {
+    padding: 30px 0;
+}
+.btn {
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 0.1px solid blue;
+    margin-top: 50px;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+    background-image: url(./img2/bg-landing-feature.png);
+    /* border-top-left-radius: 340% 22rem;
+    border-top-right-radius: 340% 19rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    margin-top: -50px;
+}
+.about_content {
+    margin-top: 100px;
+    color: rgba(120, 120, 219, 0.911);
+}
+/* .about-img {
+    border-radius: 10% 10% 50% 10%;
+} */
+.about-img-div {
+    margin-top: 100px;
+}
+
+/* section-blog */
+
+.blog_first_row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+.section-blogs {
+    width: 100%;
+    background-image: url(./img2/bg-property-details.png);
+    height: 250vh;
+    background-color: white;
+}
+.first_row_text {
+    color: rgb(95, 84, 84);
+    margin-left: 300px;
+}
+.blog_second_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.column {
+    position: relative;
+    flex: 25%;
+    max-width: 25%;
+    padding: 50px 4px;
+}
+.column_div {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
+    padding-left: 50px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 10% 10% 10% 10%;
+}
+.column_div_img {
+    width: 20%;
+    height: 20%;
+}
+.btn_blogs {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    padding: 40px 0;
+    transition: all 0.3s;
+}
+.blogs2 {
+    height: 85vh;
+    text-align: center;
+}
+.column_div_img {
+    width: 20%;
+    height: 20%;
+}
+.blog2pic {
+    width: 100%;
+    height: 70%;
+    border-radius: 10% 10% 4% 4%;
+}
+.blog2_div {
+    padding-left: 0;
+    padding-top: 0;
+}
+.last-section {
+    border-bottom-left-radius: 340% 22rem;
+    border-bottom-right-radius: 340% 19rem;
+}
+footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+}
+.btn:hover {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.2);
+}
+li:hover {
+    color: rgb(0, 132, 255);
+    transform: rotate(5deg) scale(1.3);
+    cursor: pointer;
+}
+img {
+    transition: all 0.5s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.btn_blogs:hover {
+    transform: rotate(5deg) scale(1.3);
+    text-shadow: 1px 1px 10px blue;
+}
+
+/* media */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 40%;
+        max-width: 40%;
+    }
+    img {
+        width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .col-hidden-in-media {
+        display: none;
+    }
+    .div-in-media-left {
+        margin-left: -100px;
+    }
+    .header-img-div {
+        padding-top: 0;
+        height: 40%;
+    }
+    .header_content {
+        width: 50%;
+    }
+    .section-blogs {
+        height: auto;
+    }
+    .last-section-img {
+        margin-top: 100px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
